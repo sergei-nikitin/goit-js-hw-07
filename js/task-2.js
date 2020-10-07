@@ -18,6 +18,6 @@ const ingredients = [
 const ingredientsList = ingredients.map((ingredient) => {
   const item = document.createElement("li");
   item.textContent = ingredient;
-  console.log(item);
+  return item;
 });
 document.querySelector("#ingredients").append(...ingredientsList);
